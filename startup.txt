@@ -1,1 +1,1 @@
-gunicorn --config gunicorn-cfg.py :8000 run:app
+gunicorn --config gunicorn-cfg.py -b 0.0.0.0:8000 -w 1 run:app
