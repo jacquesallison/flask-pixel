@@ -6,7 +6,7 @@ services:
     env_file: .env
     build: .
     ports:
-      - "80:80"
+      - "8000:8000"
 #    networks:
 #      - db_network
 #      - web_network
