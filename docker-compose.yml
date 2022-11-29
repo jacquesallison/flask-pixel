@@ -5,6 +5,8 @@ services:
     restart: always
     env_file: .env
     build: .
+    ports:
+      - "80:80"
 #    networks:
 #      - db_network
 #      - web_network
