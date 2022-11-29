@@ -15,4 +15,4 @@ COPY . .
 EXPOSE 8000
 
 # gunicorn
-CMD ["gunicorn", "--config", "gunicorn-cfg.py", "run:app"]
+CMD ["gunicorn", "--config", "gunicorn-cfg.py", ":8000", "run:app"]
