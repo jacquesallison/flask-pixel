@@ -3,10 +3,10 @@ services:
   appseed-app:
     container_name: appseed_app
     restart: always
-    env_file: .env
+#    env_file: .env
     build: .
     ports:
-      - "8000:8000"
+      - "8000:80"
 #    networks:
 #      - db_network
 #      - web_network
